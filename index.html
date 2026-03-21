@@ -1,1 +1,605 @@
-<html><body><h1>Generuji...</h1></body></html>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test test — Popis firmy</title>
+    <meta name="description" content="test test — Popis firmy. Navštivte naši kavárnu a vychutnejte si vynikající kávu, domácí dezerty a sezónní menu.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="test test">
+    <meta property="og:description" content="Popis firmy">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://test-test.webzitra.cz">
+    <meta property="og:image" content="https://test-test.webzitra.cz/img/og-image.png">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="test test">
+
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://test-test.webzitra.cz/">
+
+    <link rel="canonical" href="https://test-test.webzitra.cz/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <meta name="theme-color" content="#d97706">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Theme flash prevention -->
+    <script>
+        (function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark')})();
+    </script>
+
+    <!-- JSON-LD Restaurant Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "test test",
+        "description": "Popis firmy",
+        "url": "https://test-test.webzitra.cz",
+        "telephone": "+420 000 000 000",
+        "email": "info@firma.cz",
+        "servesCuisine": "Czech",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CZ"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "21:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "22:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "09:00",
+                "closes": "20:00"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#hero" class="skip-nav">Přeskočit na obsah</a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">test test</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#oteviraci-doba" class="nav-link">Oteviraci doba</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#kontakt" class="btn btn-primary btn-small nav-cta">Rezervace</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Prepnout tmavy/svetly rezim">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero " id="hero" style="">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Kavarna &amp; Restaurace</span>
+                <h1 class="hero-title">test test</h1>
+                <p class="hero-subtitle">Popis firmy</p>
+                <p class="hero-text">Vitejte v miste, kde se potkava vyjimecna kava, domaci kuchyne a utulna atmosfera. Kazdy den pro vas pripravujeme cerstve pochoutky z tech nejlepsich surovin.</p>
+                <div class="hero-cta">
+                    <a href="#kontakt" class="btn btn-primary">Rezervovat stul</a>
+                    <a href="#menu" class="btn btn-outline">Prohlednout menu</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                        <span>Cerstve denni menu</span>
+                    </div>
+                    <div class="hero-stat">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        <span>Domaci dezerty</span>
+                    </div>
+                    <div class="hero-stat">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                        <span>100% cerstve suroviny</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section" id="menu">
+        <div class="container">
+            <h2 class="section-title" data-animate>Nase menu</h2>
+            <p class="section-subtitle" data-animate>Vybirejte z nasich oblibench pokrmu a napoju</p>
+
+            <div class="menu-categories">
+                <button class="menu-tab active" data-category="snidane">Snidane</button>
+                <button class="menu-tab" data-category="obedy">Obedy</button>
+                <button class="menu-tab" data-category="napoje">Napoje</button>
+                <button class="menu-tab" data-category="dezerty">Dezerty</button>
+            </div>
+
+            <!-- Snidane -->
+            <div class="menu-grid menu-category active" id="cat-snidane">
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Klasicka snidane</h3>
+                        <span class="menu-item-price">189 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Michana vajicka, krehky croissant, cerstvé ovoce, maslo a domaci dzem</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Avokadovy toast</h3>
+                        <span class="menu-item-price">159 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Kvaskov chleb, zrale avokado, zastene vejce, cherry rajcata a microgreens</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Palacinky s ovocem</h3>
+                        <span class="menu-item-price">139 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Nadychane palacinky, sezonni ovoce, javorovy sirup a slehacka</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Granola bowl</h3>
+                        <span class="menu-item-price">129 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Domaci granola, recky jogurt, cerstvé boruvky, med a chia seminky</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Benedikt vejce</h3>
+                        <span class="menu-item-price">179 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Zastena vejce na toastu, holandska omacka, sunka a cerstvá pazitka</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Ovesna kase</h3>
+                        <span class="menu-item-price">109 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Kremova ovesna kase s karamelem, orechy, bananem a skoricinit</p>
+                </div>
+            </div>
+
+            <!-- Obedy -->
+            <div class="menu-grid menu-category" id="cat-obedy">
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Hovezi burger</h3>
+                        <span class="menu-item-price">249 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Domaci brioskova houska, hovezi maso, cheddar, slanina, rajce a hranolky</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Caesar salat</h3>
+                        <span class="menu-item-price">199 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Romana salat, grilovanekure, parmezan, krutony a domaci caesar dresink</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Kurecí wrap</h3>
+                        <span class="menu-item-price">179 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Grilovanekure, cerstvy salat, rajcata, avokado a jogurtovy dresink</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Denni polevka</h3>
+                        <span class="menu-item-price">79 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Cerstve pripravena polevka z kvalitnich surovin — ptejte se obsluhy</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Lososovy filet</h3>
+                        <span class="menu-item-price">289 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Grilovan losos, bramborove pyre, grilovan zelenina a citronovy dresink</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Vegetarianske rizoto</h3>
+                        <span class="menu-item-price">189 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Kremove rizoto s hribky, parmezan, cerstvé bylinky a truflov olej</p>
+                </div>
+            </div>
+
+            <!-- Napoje -->
+            <div class="menu-grid menu-category" id="cat-napoje">
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Espresso</h3>
+                        <span class="menu-item-price">59 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Jednoduchy nebo dvojity espresso ze specialni kave prazene lokalne</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Cappuccino</h3>
+                        <span class="menu-item-price">79 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Klasicke cappuccino s jemnou penivou mlecnou penou</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Flat White</h3>
+                        <span class="menu-item-price">89 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Dvojite espresso s hedvabnou mikropeno — hladky a intenzivni</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Matcha Latte</h3>
+                        <span class="menu-item-price">99 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Japonska matcha ceremonial grade s napenenym mlekem</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Domaci limonada</h3>
+                        <span class="menu-item-price">69 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Cerstve vymaekane citrony, mata, trtinovy cukr a perlivá voda</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Horka cokolada</h3>
+                        <span class="menu-item-price">79 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Belgicka cokolada, celé mleko a domaci slehacka</p>
+                </div>
+            </div>
+
+            <!-- Dezerty -->
+            <div class="menu-grid menu-category" id="cat-dezerty">
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Cheesecake</h3>
+                        <span class="menu-item-price">119 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Kremovy cheesecake s lesni omackou na krehkem susenkovem zakladni</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Tiramisu</h3>
+                        <span class="menu-item-price">129 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Klasicke italske tiramisu s mascarpone a kvalitnim espressem</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Cokoladovy fondant</h3>
+                        <span class="menu-item-price">139 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Teply cokoladovy dort s tekutym stredem, vanilkova zmrzlina</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Jablecny strúdl</h3>
+                        <span class="menu-item-price">99 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Domaaci jablecny strudl, skorice, rozinky a vanilkova omacka</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Panna cotta</h3>
+                        <span class="menu-item-price">109 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Kremova vanilkova panna cotta s malinovou omackou</p>
+                </div>
+                <div class="menu-item" data-animate>
+                    <div class="menu-item-header">
+                        <h3 class="menu-item-name">Domaci dort dne</h3>
+                        <span class="menu-item-price">109 Kc</span>
+                    </div>
+                    <p class="menu-item-desc">Kazdy den cerstve peceny dort — ptejte se obsluhy na dnesni nabidku</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="section section-dark" id="galerie">
+        <div class="container">
+            <h2 class="section-title" data-animate>Galerie</h2>
+            <p class="section-subtitle" data-animate>Nahlédněte do nasi kavarny</p>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large" data-animate>
+                    <img src="https://placehold.co/800x600/d97706/ffffff?text=Interiér+kavarny" alt="Interiér kavarny" loading="lazy" width="800" height="600">
+                </div>
+                <div class="gallery-item" data-animate>
+                    <img src="https://placehold.co/400x400/b45309/ffffff?text=Káva" alt="Kava" loading="lazy" width="400" height="400">
+                </div>
+                <div class="gallery-item" data-animate>
+                    <img src="https://placehold.co/400x400/92400e/ffffff?text=Dezerty" alt="Dezerty" loading="lazy" width="400" height="400">
+                </div>
+                <div class="gallery-item" data-animate>
+                    <img src="https://placehold.co/400x400/78350f/ffffff?text=Snídaně" alt="Snidane" loading="lazy" width="400" height="400">
+                </div>
+                <div class="gallery-item gallery-item-large" data-animate>
+                    <img src="https://placehold.co/800x600/a16207/ffffff?text=Terasa" alt="Terasa" loading="lazy" width="800" height="600">
+                </div>
+                <div class="gallery-item" data-animate>
+                    <img src="https://placehold.co/400x400/ca8a04/ffffff?text=Obědy" alt="Obedy" loading="lazy" width="400" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RECENZE -->
+    <section class="section section-alt" id="recenze">
+        <div class="container">
+            <h2 class="section-title">Co o nas rikaji klienti</h2>
+            <p class="section-subtitle">Recenze nasich spokojenych zakazniku</p>
+            <div class="reviews-grid">
+                <div class="review-card" data-animate>
+                    <div class="review-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="review-text">Skvela spoluprace od zacatku do konce. Profesionalni pristup a vysledek predcil nase ocekavani. Jednoznacne doporucujeme.</p>
+                    <div class="review-author">
+                        <strong>Jan N.</strong>
+                        <span>Spokojeny zakaznik</span>
+                    </div>
+                </div>
+                <div class="review-card" data-animate>
+                    <div class="review-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="review-text">Rychle, kvalitne a za rozumnou cenu. Komunikace byla bezproblemova a vysledek odpovidal tomu, co jsme si predstavovali.</p>
+                    <div class="review-author">
+                        <strong>Petra K.</strong>
+                        <span>Pravidelna zakaznice</span>
+                    </div>
+                </div>
+                <div class="review-card" data-animate>
+                    <div class="review-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="review-text">Vse probehlo naprosto hladce a v dohodnutem terminu. Jsme velmi spokojeni a rozhodne se obratim znovu.</p>
+                    <div class="review-author">
+                        <strong>Martin D.</strong>
+                        <span>Spokojeny zakaznik</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OTEVIRACI DOBA -->
+    <section class="section" id="oteviraci-doba">
+        <div class="container">
+            <h2 class="section-title" data-animate>Oteviraci doba</h2>
+            <p class="section-subtitle" data-animate>Tesime se na vasi navstevu</p>
+            <div class="hours-wrapper" data-animate>
+                <div class="hours-card">
+                    <div class="hours-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <table class="hours-table">
+                        <tbody>
+                            <tr>
+                                <td class="hours-day">Pondeli - Patek</td>
+                                <td class="hours-time">8:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <td class="hours-day">Sobota</td>
+                                <td class="hours-time">9:00 - 22:00</td>
+                            </tr>
+                            <tr>
+                                <td class="hours-day">Nedele</td>
+                                <td class="hours-time">9:00 - 20:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="hours-note">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                        <span>Ve svatcich muze byt oteviraci doba upravena.</span>
+                    </div>
+                </div>
+                <div class="hours-features">
+                    <div class="hours-feature">
+                        <div class="hours-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                        </div>
+                        <div>
+                            <strong>Snidane</strong>
+                            <span>kazdy den od otevreni do 11:00</span>
+                        </div>
+                    </div>
+                    <div class="hours-feature">
+                        <div class="hours-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.27 21.7s9.87-3.5 12.73-6.36a4.5 4.5 0 00-6.36-6.37C5.77 11.84 2.27 21.7 2.27 21.7zM8.64 14l-2.05-2.05M15.34 15l5 5M18 10l4 4"/></svg>
+                        </div>
+                        <div>
+                            <strong>Denni menu</strong>
+                            <span>pondeli az patek, 11:00 - 14:00</span>
+                        </div>
+                    </div>
+                    <div class="hours-feature">
+                        <div class="hours-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                        </div>
+                        <div>
+                            <strong>Rezervace</strong>
+                            <span>doporucujeme na vikend a svatky</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section section-dark" id="kontakt">
+        <div class="container">
+            <h2 class="section-title" data-animate>Kontakt &amp; Rezervace</h2>
+            <p class="section-subtitle" data-animate>Rezervujte si stul nebo nam napiste</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item" data-animate>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        <div>
+                            <strong>Telefon</strong>
+                            <a href="tel:+420 000 000 000">+420 000 000 000</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-animate>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:info@firma.cz">info@firma.cz</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-animate>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <strong>Adresa</strong>
+                            <span>Ceska republika</span>
+                        </div>
+                    </div>
+                    <div class="contact-cta" data-animate>
+                        <p>Zavolejte nam a rezervujte si stul ještě dnes. Na vikend doporucujeme rezervaci predem.</p>
+                        <a href="tel:+420 000 000 000" class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            Zavolat
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" data-wz-contact>
+                    <h3 class="form-title">Napiste nam</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Jmeno</label>
+                            <input type="text" id="name" name="name" required placeholder="Vase jmeno">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+420 000 000 000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="vas@email.cz">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Datum rezervace</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Pocet osob</label>
+                            <select id="guests" name="guests">
+                                <option value="">Vyber...</option>
+                                <option value="1">1 osoba</option>
+                                <option value="2">2 osoby</option>
+                                <option value="3-4">3-4 osoby</option>
+                                <option value="5-6">5-6 osob</option>
+                                <option value="7+">7 a vice</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Poznamka</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Specialni pozadavky, alergie, oslava..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Odeslat rezervaci</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <strong>test test</strong>
+                    <p>Popis firmy</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#menu">Menu</a>
+                    <a href="#galerie">Galerie</a>
+                    <a href="#oteviraci-doba">Oteviraci doba</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+                <div class="footer-contact">
+                    <a href="mailto:info@firma.cz">info@firma.cz</a>
+                    <a href="tel:+420 000 000 000">+420 000 000 000</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 test test. Vsechna prava vyhrazena.</p>
+                <p class="footer-credit">Web vytvoril <a href="https://webzitra.cz" target="_blank" rel="noopener">WebZitra</a></p>
+            </div>
+        </div>
+        <div style="text-align:center;padding:12px;font-size:0.75rem;color:var(--text-muted,#999);border-top:1px solid var(--border,#eee);">
+        Vytvořeno na <a href="https://webzitra.cz?ref=free" style="color:var(--primary,#6366f1);text-decoration:none;">WebZítra.cz</a>
+    </div>
+</footer>
+
+    <!-- ═══ COOKIE BANNER ═══ -->
+    <div class="cookie-banner" id="cookie-banner" hidden>
+        <div class="cookie-content">
+            <p>Tento web používá cookies pro zajištění nejlepšího zážitku.</p>
+            <p class="cookie-credit">Web vytvořilo <a href="https://webzitra.cz" target="_blank" rel="noopener">WebZítra</a> — v&nbsp;případě zájmu nás kontaktujte na <a href="https://webzitra.cz" target="_blank" rel="noopener">webzitra.cz</a>, tel: <a href="tel:+420777269919">777&nbsp;269&nbsp;919</a></p>
+        </div>
+        <div class="cookie-actions">
+            <button class="btn btn-small btn-primary" id="cookie-accept">Přijmout</button>
+            <button class="btn btn-small btn-outline" id="cookie-reject">Odmítnout</button>
+        </div>
+    </div>
+
+
+    <!-- ═══ SCROLL TO TOP ═══ -->
+    <button class="scroll-top" id="scroll-top" aria-label="Nahoru">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <noscript><style>[data-animate]{opacity:1;transform:none}</style></noscript>
+    <script src="js/main.js"></script>
+</body>
+</html>
